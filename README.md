@@ -74,12 +74,11 @@
 - Denunciar atividade	
 - Denunciar perfil	
 
----
-
 # Outros			
 - Modo claro/escuro		
 - Regras
 
+---
 
 ## Autores
 
