@@ -1,0 +1,11 @@
+header {
+    border: 5px red solid;
+    height: 100px;
+}
+
+img {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+}
