@@ -1,12 +1,56 @@
 import './styles.css'
-import logo from './img/logo.svg'
+import logo from './img/logo.png'
+
+const itemsList = [
+    {   
+        key: 1,
+        label: 'Página Inicial',
+        name: 'home',
+        link: '#'
+    },
+    {   
+        key: 2,
+        label: 'Quero ser voluntário',
+        name: 'home2',
+        link: '#'
+    },
+    {   
+        key: 3,
+        label: 'Sou uma ONG',
+        name: 'home3',
+        link: '#'
+    },
+    {   
+        key: 4,
+        label: 'Pontos de Coleta',
+        name: 'home4',
+        link: '#'
+    },
+    {   
+        key: 5,
+        label: 'Mais',
+        name: 'home5',
+        link: '#'
+    }
+]
+
+const currentPage = 'home2'
 
 function header() {
+
     return (
-        <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>Hello world.</p>
-            <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Learn React</a>
+        
+        <header className="header">
+
+        <img src={logo}/>
+            
+            {
+                itemsList.map(item => {
+                    return (
+                        <a className={`App_link ${item.name === currentPage ? 'selected' : ''}`} href={item.link} target="_blank">{item.label}</a>
+                    )
+                })
+            }
         </header>
     );
 }
