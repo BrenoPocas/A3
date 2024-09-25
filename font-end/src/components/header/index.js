@@ -3,7 +3,7 @@ import './script'
 import logo from './img/logo.png'
 import close_white_36dp from './img/close_white_36dp.svg'
 import menu_white_36dp from './img/menu_white_36dp.svg'
-import useWindowDimensions from '../../hooks/windowDimensions'
+// import useWindowDimensions from '../../hooks/windowDimensions'
 
 // const itemsList = [
     // {   
@@ -41,7 +41,7 @@ import useWindowDimensions from '../../hooks/windowDimensions'
 const currentPage = 'home2'
   
 function header() {
-    const { height, width } = useWindowDimensions();
+    // const { height, width } = useWindowDimensions();
 
 
     return (
@@ -51,7 +51,7 @@ function header() {
             <div className='logo_nome_projeto'>
                 <img className="logo" src={logo}/>
                 <h1 className="nome_projeto">Projeto</h1>
-                {height} : {width}
+                {/* {height} : {width} */}
             </div>
             <div className="nav_list">
                 <ul>
