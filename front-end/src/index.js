@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+
 import Home from './pages/home';
 import Termos from './pages/termos';
 import Politicas from './pages/politica-privacidade';
@@ -12,6 +13,12 @@ import Faq from './pages/faq';
 import Forum from './pages/forum';
 import ONGS from './pages/ongs';
 import PontosColeta from './pages/pontos-coleta';
+
+import Certificados from './pages/configuracoes/certificados';
+import EncerrarConta from './pages/configuracoes/encerrar-conta';
+import Favoritos from './pages/configuracoes/favoritos';
+import Newsletter from './pages/configuracoes/newsletter';
+import Perfil from './pages/configuracoes/perfil';
 
 import {
   createBrowserRouter,
@@ -58,6 +65,26 @@ const router = createBrowserRouter([
   {
     path: "/pontos-coleta",
     element: <PontosColeta/>
+  },
+  {
+    path: "/configuracoes/certificados",
+    element: <Certificados/>
+  },
+  {
+    path: "/configuracoes/encerrar-conta",
+    element: <EncerrarConta/>
+  },
+  {
+    path: "/configuracoes/favoritos",
+    element: <Favoritos/>
+  },
+  {
+    path: "/configuracoes/newsletter",
+    element: <Newsletter/>
+  },
+  {
+    path: "/configuracoes/perfil",
+    element: <Perfil/>
   },
 ]);
 

@@ -1,7 +1,6 @@
 import './style.css'
 import './script'
 import logo from './img/logo.png'
-import close_white_36dp from './img/close_white_36dp.svg'
 import menu_white_36dp from './img/menu_white_36dp.svg'
 import { useNavigate } from "react-router-dom";
 
@@ -14,7 +13,7 @@ function Header() {
         <header>
         <nav className="nav_bar">
             <div className='logo_nome_projeto'>
-                <img className="logo" src={logo}/>
+                <img alt="LOGO PROJETO" className="logo" src={logo}/>
                 <h1 className="nome_projeto">Projeto</h1>
             </div>
             <div className="nav_list">
@@ -26,12 +25,12 @@ function Header() {
                 </ul>
             </div>
             <div className="login_button">
-                <button><a href="#">Login</a></button>
+                <button className='button_header' onClick={() => navigateTo('/configuracoes/perfil')}>Login</button>
             </div>
 
             <div className="mobile_menu_icon">
                 <button onClick="menuShow()">
-                    <img src={menu_white_36dp}/>
+                    <img alt="HAMBURGUER" src={menu_white_36dp}/>
                 </button>
             </div>
         </nav>
@@ -44,7 +43,7 @@ function Header() {
             </ul>
 
             <div className="login_button">
-                <button><a href="#">Login</a></button>
+            <button className='button_header' onClick={() => navigateTo('/configuracoes/perfil')}>Login</button>
             </div>
         </div>
     </header>
