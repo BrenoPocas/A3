@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.seccao {
+    display: flex;
+    flex-direction: column;
+}
+
+.a {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.b {
+    width: 75%;
+}
+
+.titulo_pagina_configuracoes {
+    padding: 20px;
+    text-align: center;
+}
+
+.botao_encerrar_conta {
+    background-color: #d6711a;;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #d6711a;
+    margin-top: 20px;
+}

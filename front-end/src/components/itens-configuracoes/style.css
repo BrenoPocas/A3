@@ -9,9 +9,49 @@
 .itens_configuracoes {
     display: flex;
     flex-direction: column;
-    border: 1px maroon solid;
+    width: 25%;
+    margin: 0;
 }
 
 .configuracoes_nav_link{
     color: black;
+}
+  
+.itens_configuracoes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.configuracoes_nav_link {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+.configuracoes_nav_link:hover{
+    color: #d6711a;
+}
+
+.itens_configuracoes li {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+  
+.itens_configuracoes a {
+    text-decoration: none;
+    color: #333333;
+    display: flex;
+    font-size: 15px;
+}
+
+.itens_configuracoes a:hover{
+    color: #d6711a;
+}
+
+.itens_configuracoes a:active{
+    color: #d6711a;
 }

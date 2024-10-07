@@ -12,7 +12,7 @@ function Footer() {
         <div className="paginas_plataforma">
           <h1>Doe+</h1>
           <ul>
-            <li className="footer_nav_item"><button className='footer_nav_link_footer' onClick={() => navigateTo('/')}>Home</button></li>
+            <li className="footer_nav_item"><button className='footer_nav_link_footer' onClick={() => navigateTo('/')}>Página Inicial</button></li>
             <li className="footer_nav_item"><button className='footer_nav_link_footer' onClick={() => navigateTo('/politica-privacidade')}>Política de Privacidade</button></li>
             <li className="footer_nav_item"><button className='footer_nav_link_footer' onClick={() => navigateTo('/termos')}>Termos de Uso</button></li>
             <li className="footer_nav_item"><button className='footer_nav_link_footer' onClick={() => navigateTo('/faq')}>FAQ</button></li>
