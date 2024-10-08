@@ -8,7 +8,8 @@
 
 .itens_configuracoes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
     width: 25%;
     margin: 0;
 }

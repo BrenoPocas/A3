@@ -17,86 +17,146 @@ function Perfil() {
 
                 <h1 className="titulo_pagina_configuracoes">PERFIL</h1>
 
-                <form action="#">
+                <form className="formulario_perfil" action="#">
 
-                    <div>
-                      <label for="nome">Login:</label>
-                      <input type="text" id="login" required/>
-                    </div>
+                    <label for="nomeCompleto">Nome Completo:</label>
+                    <input type="text" id="nomeCompleto" required/>
 
-                    <div>
-                      <label for="email">E-mail:</label>
-                      <input type="email" id="email" required/>
-                    </div>
+                    <label for="sobreVoce">Sobre você:</label>
+                    <textarea type="text" id="sobreVoce" cols="40" rows="5"></textarea>
 
-                    <div>
-                        <label for="date">Data Nascimento</label>
-                        <input type="date" id="date" required/>
-                    </div>
+                    <label for="telefone">Telefone:</label> 
+                    <input type="tel" id="telefone" required placeholder="(xx) xxxxx-xxxx"></input>
 
-                    <div>
-                        <label for="pass">Senha:</label>
-                        <input type="password" id="pass" name="password" minlength="8" required/>
-                    </div>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="xxx.xxx.xxx-xx" required></input>
 
-                    <div>
-                        <label for="pass">Confirmar Senha:</label>
-                        <input type="password" id="pass" name="password" minlength="8" required/>
-                    </div>
+                    <label for="date">Data Nascimento:</label>
+                    <input type="date" id="date" required/>
 
-                    <div>
-                        <label for="sexo">Sexo:</label>
-                        <select name="sexo" id="sexo">
-                            <option value="Feminino">Feminino</option>
-                            <option value="Masculino">Masculino</option>
-                            <option value="Prefiro não opinar">Prefiro não opinar</option>
-                        </select>
-                    </div>
+                    <label for="genero">Gênero:</label>
+                    <select id="genero" required>
+                        <option value="selecioneGenero">Selecione o gênero</option> 
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="prefiroNaoInformar">Prefiro não informar</option>
+                    </select>
 
-                    <div>
-                        <label for="cidade">Cidade:</label>
-                        <input type="text" id="cidade" required/>
-                    </div>
+                    <label for="estado">Estado:</label>
+                    <select id="estado" required>
+                        <option value="selecioneEstado">Selecione o estado</option> 
+                        <option value="ac">Acre</option> 
+                        <option value="al">Alagoas</option> 
+                        <option value="am">Amazonas</option> 
+                        <option value="ap">Amapá</option> 
+                        <option value="ba">Bahia</option> 
+                        <option value="ce">Ceará</option> 
+                        <option value="df">Distrito Federal</option> 
+                        <option value="es">Espírito Santo</option> 
+                        <option value="go">Goiás</option> 
+                        <option value="ma">Maranhão</option> 
+                        <option value="mt">Mato Grosso</option> 
+                        <option value="ms">Mato Grosso do Sul</option> 
+                        <option value="mg">Minas Gerais</option> 
+                        <option value="pa">Pará</option> 
+                        <option value="pb">Paraíba</option> 
+                        <option value="pr">Paraná</option> 
+                        <option value="pe">Pernambuco</option> 
+                        <option value="pi">Piauí</option> 
+                        <option value="rj">Rio de Janeiro</option> 
+                        <option value="rn">Rio Grande do Norte</option> 
+                        <option value="ro">Rondônia</option> 
+                        <option value="rs">Rio Grande do Sul</option> 
+                        <option value="rr">Roraima</option> 
+                        <option value="sc">Santa Catarina</option> 
+                        <option value="se">Sergipe</option> 
+                        <option value="sp">São Paulo</option> 
+                        <option value="to">Tocantins</option> 
+                    </select>
 
-                    <div>
-                        <label for="home-page">Home-Page:</label>
-                        <input type="text" id="home-page" required/>
-                    </div>
+                    <label for="cidade">Cidade:</label>
+                    <select id="cidade" required>
+                        <option value="selecioneCidade">Selecione a cidade</option> 
+                        <option value="xx">xx</option>
+                        <option value="yy">yy</option>
+                        <option value="zz">zz</option>
+                    </select>
 
-                    <div>
-                        <label for="interesses">Interesses:</label>
-                        <select name="interesses" id="interesses" multiple>
-                            <option value="Esporte">Ações emergências</option>
-                            <option value="Tecnologia">Cidade inteligentes</option>
-                            <option value="Cinema">Combate à pobreza</option>
-                            <option value="Moda">Consumo consciente</option>
-                            <option value="Moda">Crianças</option>
-                            <option value="Moda">Cultura e Arte</option>
-                            <option value="Moda">Dependentes químicos</option>
-                            <option value="Moda">Direitos Humanos</option>
-                            <option value="Moda">Educação</option>
-                            <option value="Moda">Esportes</option>
-                            <option value="Moda">Idosos</option>
-                            <option value="Moda">Igualdade de gênero</option>
-                            <option value="Moda">Inclusão</option>
-                            <option value="Moda">Meio Ambiente</option>
-                            <option value="Moda">Mulheres</option>
-                            <option value="Moda">Música</option>
-                            <option value="Moda">Pessoas com câncer</option>
-                            <option value="Moda">Pessoas com deficiência</option>
-                            <option value="Moda">Pessoas com doenças raras</option>
-                            <option value="Moda">Pessoas em situação de rua</option>
-                            <option value="Moda">Proteção animal</option>
-                            <option value="Moda">Refugiados</option>
-                            <option value="Moda">Saúde</option>
-                            <option value="Moda">Treinamento profissional</option>
-                            <option value="Moda">Outros…</option>
-                        </select>
-                    </div>
+                    <label for="profissao">Profissao:</label>
+                    <select id="profissao" required>
+                        <option value="selecioneProfissao">Selecione a profissão</option> 
+                        <option value="xx">xx</option>
+                        <option value="yy">yy</option>
+                        <option value="zz">zz</option>
+                    </select>
 
-                    <div>
-                    <button className="botao_encerrar_conta" type="button">Salvar</button>
-                    </div>
+                    <label for="causas">Causas:</label>
+                    <select id="causas" multiple required>
+                        <option value="acoesEmergencias">Ações Emergências</option>
+                        <option value="cidadesInteligentes">Cidades inteligentes</option>
+                        <option value="combatePobreza">Combate à pobreza</option>
+                        <option value="consumoConsciente">Consumo consciente</option>
+                        <option value="criancas">Crianças</option>
+                        <option value="culturaArte">Cultura e Arte</option>
+                        <option value="dependentesQuimicos">Dependentes químicos</option>
+                        <option value="direitosHumanos">Direitos Humanos</option>
+                        <option value="educacao">Educação</option>
+                        <option value="esportes">Esportes</option>
+                        <option value="idosos">Idosos</option>
+                        <option value="igualdade">Igualdade de gênero</option>
+                        <option value="inclusao">Inclusão</option>
+                        <option value="meioAmbiente">Meio Ambiente</option>
+                        <option value="mulheres">Mulheres</option>
+                        <option value="musica">Música</option>
+                        <option value="pessoasCancer">Pessoas com câncer</option>
+                        <option value="pessoasDeficiencia">Pessoas com deficiência</option>
+                        <option value="pessoasDoencasRaras">Pessoas com doenças raras</option>
+                        <option value="pessoasSituacaoRua">Pessoas em situação de rua</option>
+                        <option value="protecaoAnimal">Proteção animal</option>
+                        <option value="refugiados">Refugiados</option>
+                        <option value="saude">Saúde</option>
+                        <option value="treinamentoProfissional">Treinamento profissional</option>
+                        <option value="outros">Outros</option> 
+                    </select>
+
+                    <label for="habilidades">Habilidades:</label>
+                    <select id="habilidades" multiple required>
+                        <option value="agilidade">Agilidade</option>
+                        <option value="artes">Artes</option>
+                        <option value="comunicacao">Comunicação</option>
+                        <option value="cozinha">Cozinha</option>
+                        <option value="dancaMusica">Dança/Música</option>
+                        <option value="direito">Direito</option>
+                        <option value="educacao">Educação</option>
+                        <option value="esportes">Esportes</option>
+                        <option value="gerenciamento">Gerenciamento</option>
+                        <option value="idiomas">Idiomas</option>
+                        <option value="organizacao">Organização</option>
+                        <option value="saude">Saúde</option>
+                        <option value="outros">Outros</option>
+                    </select>
+
+                    <label for="idiomas">Idiomas:</label>
+                    <select id="idiomas" multiple required>
+                        <option value="pt-br">Português (PT-BR)</option>
+                        <option value="pt-pt">Português (PT-PT)</option>
+                        <option value="en-us">Inglês (EN-US)</option>
+                        <option value="en-gb">Inglês (EN-GB)</option>
+                        <option value="es">Espanhol (ES)</option>
+                        <option value="fr">Francês (FR)</option>
+                        <option value="cmn">Mandarim (CMN)</option>
+                    </select>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required/>
+                    
+                    <label for="pass">Senha:</label>
+                    <input type="password" id="pass" name="password" minlength="8" required/>
+
+                    <label for="pass">Confirmar Senha:</label>
+                    <input type="password" id="pass" name="password" minlength="8" required/>                   
+
+                    <button className="botao_salvar" type="button">Salvar</button>
 
                 </form>
                 
