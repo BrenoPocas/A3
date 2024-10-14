@@ -20,6 +20,11 @@ import Favoritos from './pages/configuracoes/favoritos';
 import Newsletter from './pages/configuracoes/newsletter';
 import Perfil from './pages/configuracoes/perfil';
 
+import Login from './pages/login/login';
+import VerificarConta from './pages/login/verificar-conta';
+import ContaVerificada from './pages/login/conta-verificada';
+import CriarConta from './pages/login/criar-conta';
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -85,6 +90,22 @@ const router = createBrowserRouter([
   {
     path: "/configuracoes/perfil",
     element: <Perfil/>
+  },
+  {
+    path: "/login/login",
+    element: <Login/>
+  },
+  {
+    path: "/login/verificar-conta",
+    element: <VerificarConta/>
+  },
+  {
+    path: "/login/conta-verificada",
+    element: <ContaVerificada/>
+  },
+  {
+    path: "/login/criar-conta",
+    element: <CriarConta/>
   },
 ]);
 

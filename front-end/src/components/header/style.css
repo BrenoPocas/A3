@@ -116,14 +116,33 @@ button:hover{
     text-decoration: none;
 }
 
+.botoes_header {
+    display: flex;
+}
+
 .login_button button {
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #d6711a;
+    margin-right: 10px;
 }
 
 .login_button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.configuracoes_button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #582900;
+}
+
+.configuracoes_button button a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
@@ -171,6 +190,13 @@ button:hover{
         padding: 1rem 2rem;
     }
     .mobile_menu .login_button button {
+        width: 100%;
+    }
+    .mobile_menu .configuracoes_button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile_menu .configuracoes_button button {
         width: 100%;
     }
     .open {
