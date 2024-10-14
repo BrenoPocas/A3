@@ -1,9 +1,9 @@
 import './style.css'
 import Header from '../../../components/header'
 import Footer from '../../../components/footer'
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
-function VerificarConta() {
+function EsqueceuSenha() {
 
     const navigate = useNavigate()
     function navigateTo(destination) {  
@@ -16,7 +16,7 @@ function VerificarConta() {
 
         <section>
 
-            <h2>Conteúdo aqui</h2>
+            <h2>Esqueceu Senha</h2>
 
         </section>
 
@@ -25,4 +25,4 @@ function VerificarConta() {
     </div>;
 }
 
-export default VerificarConta
+export default EsqueceuSenha

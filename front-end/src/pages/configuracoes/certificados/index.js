@@ -15,7 +15,7 @@ function Certificados() {
 
                 <div className="b">
 
-                    <h1 className="titulo_pagina_configuracoes">FAVORITOS</h1>
+                    <h1 className="titulo_pagina_configuracoes">CERTIFICADOS</h1>
 
                     <h2>Conteudo aqui</h2>
                     

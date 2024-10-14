@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.formulario_login {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario_login input {
+    height: 1.8rem;
+}
+
+.formulario_login option {
+    height: 1.8rem;
+}
+
+.botao_link {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+.botao_link:hover{
+    color: #d6711a;
+}
+
+.botao_entrar {
+    background-color: #d6711a;;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #d6711a;
+    margin-top: 20px;
+}

@@ -21,6 +21,7 @@ import Newsletter from './pages/configuracoes/newsletter';
 import Perfil from './pages/configuracoes/perfil';
 
 import Login from './pages/login/login';
+import EsqueceuSenha from './pages/login/esqueceu-senha';
 import VerificarConta from './pages/login/verificar-conta';
 import ContaVerificada from './pages/login/conta-verificada';
 import CriarConta from './pages/login/criar-conta';
@@ -94,6 +95,10 @@ const router = createBrowserRouter([
   {
     path: "/login/login",
     element: <Login/>
+  },
+  {
+    path: "/login/esqueceu-senha",
+    element: <EsqueceuSenha/>
   },
   {
     path: "/login/verificar-conta",

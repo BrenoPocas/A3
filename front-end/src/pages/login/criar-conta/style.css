@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.formulario_criar_conta {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario_criar_conta input {
+    height: 1.8rem;
+}
+
+.formulario_criar_conta option {
+    height: 1.8rem;
+}
+
+input:checked + label {
+    color: red;
+}
+  
+input[type="radio"]:checked {
+    box-shadow: 0 0 0 3px orange;
+}
+  
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px hotpink;
+}
+  
+option:checked {
+    box-shadow: 0 0 0 3px lime;
+    color: red;
+}
+
+.botao_criar_conta {
+    background-color: #d6711a;;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #d6711a;
+    margin-top: 20px;
+}
