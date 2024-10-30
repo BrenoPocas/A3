@@ -1,16 +1,16 @@
-import './style.css'
-import Header from '../../components/header'
-import Footer from '../../components/footer'
+import "./style.css";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+import CollapseButton from "../../components/collapse-button";
 
 function Faq() {
-
-    return <div>
-        <Header/>
-        <section>
-            <h2 className='titulo...'>Faq</h2>
-        </section>
-        <Footer/>
-    </div>;
+  return (
+    <div>
+      <Header />
+      <CollapseButton />
+      <Footer />
+    </div>
+  );
 }
 
-export default Faq
+export default Faq;
