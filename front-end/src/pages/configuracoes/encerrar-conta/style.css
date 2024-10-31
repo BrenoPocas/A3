@@ -27,6 +27,7 @@
 }
 
 .botao_encerrar_conta {
+    border-radius: 30%;
     background-color: #d6711a;;
     color: white;
     padding: 10px 15px;
