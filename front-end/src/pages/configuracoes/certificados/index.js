@@ -2,6 +2,7 @@ import './style.css'
 import Header from '../../../components/header'
 import Footer from '../../../components/footer'
 import ItensConfiguracoes from '../../../components/itens-configuracoes';
+import IMAGEN from './img/em_construcao1.png'
 
 function Certificados() {
 
@@ -16,8 +17,7 @@ function Certificados() {
                 <div className="b">
 
                     <h1 className="titulo_pagina_configuracoes">CERTIFICADOS</h1>
-
-                    <h2>Conteudo aqui</h2>
+                    <img src={IMAGEN} alt="Em construção" />
                     
                 </div>
 
