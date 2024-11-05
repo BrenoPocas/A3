@@ -1,14 +1,7 @@
-
-.formulario_login {
-    background-color:#9ed1d0;
-    backdrop-filter: blur(10px);
-    border: 2px solid #9ed1d0;
-    border-radius: 30px;
-    padding: 80px;
-    width: 400px;
-    
-
+*{
+    box-sizing: border-box;
 }
+
 .container{
     display: flex;
     justify-content: center;
@@ -16,63 +9,76 @@
     min-height: 100vh;
 }
 
-.container h1 {
-    margin-bottom: 40px;
-    text-align: center;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+.formulario_login{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9ed1d0;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 40px;
 }
 
-.email-senha{
-    margin-bottom: 50px;
+.formulario_login h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container .email-senha {
-    position: relative;
+    margin-bottom: 15px;
     width: 100%;
-    height: 50px;
-    margin: 30px auto;
-    outline: none;
+}
+
+.email-senha label {
+    display: block;
+    margin-bottom: 7px;
 }
 
 .email-senha input {
+    border-radius: 999px;
+    padding: 15px;
     width: 100%;
-    height: 100%;
-    outline: none;
-    background-color: white;
-    border: 2px solid white;
-    border-radius: 40px;
-    color: rgb(0, 0, 0) ;
+    border: none;
 }
 
-.botao {
-    text-align: center;
+.formulario_login .botao_login {
+    border: none;
+    border-radius: 999px;
     display: block;
-    width: 70%;
     height: 50px;
-    background-color: rgb(255, 255, 255) ;
-    border: 2px solid rgb(255, 255, 255);
-    outline: none;
-    border-radius: 40px;
+    width: 70%;
+    background-color: rgb(112, 112, 255);
     box-shadow: 0 0 10px rgb(3, 31, 139);
     font-size: 16px;
-    font-weight: 600;
-    text-shadow: none;
-    margin: 0 auto;
-    margin: button 20px;
-    margin-bottom: 20px;
-    color: black;
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
 }
 
-.botao_link {
-    margin: 15px;
-    color: rgb(0, 0, 0);
+.formulario_login .botao_login:hover {
+    background-color: rgb(80, 80, 255);
+    font-size: 1.1em;
 }
 
-.botao:hover {
-   background-color: rgb(112, 112, 255);
-   font-size: 18px; 
-   color: white
+.formulario_login .botao_login:active {
+    background-color: rgb(112, 112, 255);
+    font-size: 16px;
 }
+
+.formulario_login li {
+    list-style: none;
+}
+
+.formulario_login .botao_link {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.formulario_login .botao_link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
