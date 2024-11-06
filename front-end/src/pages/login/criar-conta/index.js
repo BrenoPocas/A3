@@ -14,7 +14,7 @@ function CriarConta() {
         
         <Header/>
 
-        <section>
+        <section className='container1'>
 
         <form className="formulario_criar_conta" action="#">
 
@@ -59,7 +59,7 @@ function CriarConta() {
             <label for="cidade">Cidade:</label>
             <select id="cidade" required>
                 <option value="selecioneCidade">Selecione a cidade</option> 
-                <option value="xx">xx</option>
+                <option value="BH">Belo Horizonte</option>
                 <option value="yy">yy</option>
                 <option value="zz">zz</option>
             </select>
@@ -75,29 +75,31 @@ function CriarConta() {
 
             <h1>Ao cadastrar-se você assume que leu e que concorda com nossos termos:</h1>
 
-            <div>
+            <div className='termo'>
                 <input type="checkbox" id="checkboxTermosPrivacidade"/>
                 <label for="checkboxTermosPrivacidade">Termos de privacidade</label>
             </div>
 
-            <div>
+            <div className='termo'>
                 <input type="checkbox" id="checkboxTermosUso"/>
                 <label for="checkboxTermosUso">Termos de Uso</label>
             </div>
 
-            <div>
+            <div className='termo'>
                 <input type="checkbox" id="checkboxTratamentoDadosPessoais"/>
                 <label for="checkboxTratamentoDadosPessoais">Consentimento do Tratamento de Dados Pessoais</label>
             </div>
 
             <h1>Inscrever-se no newsletter:</h1>
 
-            <div>
+            <div className='sim_nao'>
                 <input type="radio" name="my-input" id="yes" value="yes" />
                 <label for="yes">Sim</label>
+            </div>
 
-                <input type="radio" name="my-input" id="no" value="no" />
-                <label for="no">Não</label>
+            <div className='sim_nao'>
+            <input type="radio" name="my-input" id="yes" value="yes" />
+            <label for="yes">Não</label>
             </div>
 
             <button className="botao_criar_conta" type="button">Criar Conta</button>

@@ -1,46 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
+*{
+    box-sizing: border-box;
 }
 
-.formulario_criar_conta {
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.formulario_criar_conta{
+    width: 600px;
     display: flex;
     flex-direction: column;
+    background-color: #9ed1d0;
+    box-shadow: 0 0 10px #6d9c9b;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 50px;
+    margin: 40px;
 }
 
 .formulario_criar_conta input {
-    height: 1.8rem;
+    margin: 15px;
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
 }
 
-.formulario_criar_conta option {
-    height: 1.8rem;
+.formulario_criar_conta label{
+    margin-bottom: -1px;
+    
 }
 
-input:checked + label {
-    color: red;
+#estado {
+    margin: 15px;
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
 }
-  
-input[type="radio"]:checked {
-    box-shadow: 0 0 0 3px orange;
+
+#cidade {
+    margin: 15px;
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
 }
-  
-input[type="checkbox"]:checked {
-    box-shadow: 0 0 0 3px hotpink;
+
+.formulario_criar_conta h1 {
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
-  
-option:checked {
-    box-shadow: 0 0 0 3px lime;
-    color: red;
+
+.termo input {
+   width: auto;
+}
+
+.sim_nao input{
+    width: auto;
+    margin-bottom: -5px;
 }
 
 .botao_criar_conta {
-    background-color: #d6711a;;
-    color: rgb(205, 0, 0);
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #d6711a;
-    margin-top: 20px;
+    border: none;
+    border-radius: 999px;
+    display: block;
+    height: 50px;
+    width: 70%;
+    background-color: rgb(112, 112, 255);
+    box-shadow: 0 0 10px rgb(3, 31, 139);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px auto 20px;
+    cursor: pointer;
 }
+
+.formulario_criar_conta .botao_criar_conta:hover {
+    background-color: rgb(80, 80, 255);
+    font-size: 1.1em;
+}
+
+.formulario_criar_conta .botao_criar_conta:active {
+    background-color: rgb(112, 112, 255);
+    font-size: 16px;
+}
+
+
+
+

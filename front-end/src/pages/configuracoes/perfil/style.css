@@ -1,46 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-}
-
-.formulario_perfil {
-    display: flex;
-    flex-direction: column;
-}
-
-.formulario_perfil input {
-    height: 1.8rem;
+*{
+    box-sizing: border-box;
 }
 
 
-.formulario_perfil option {
-    height: 1.8rem;
-}
-
-#genero {
-    height: 1.8rem;
-}
-
-#estado {
-    height: 1.8rem;
-}
-
-#cidade {
-    height: 1.8rem;
-}
-
-#profissao {
-    height: 1.8rem;
-}
-
-.botao_salvar {
-    background-color: #d6711a;;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #d6711a;
-    margin-top: 20px;
-}
