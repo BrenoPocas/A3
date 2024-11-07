@@ -21,9 +21,27 @@
     width: 75%;
 }
 
+.encerrar-conta{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #9ed1d0;
+    box-shadow: 0 0 10px #6d9c9b;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 50px;
+    margin: 40px;
+}
+
 .titulo_pagina_configuracoes {
     padding: 20px;
     text-align: center;
+    margin-top: 10px;
+}
+
+.info{
+    color: red;
+    margin-bottom: 10px;
 }
 
 .botao_encerrar_conta {
