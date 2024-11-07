@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-
-.perfil{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
 .formulario_login1{
     width: 600px;
     display: flex;

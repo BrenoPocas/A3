@@ -13,7 +13,7 @@ function EncerrarConta() {
 
                 <ItensConfiguracoes/>
 
-                <div className="c">
+                <div className="encerrar conta">
 
                     <h1 className="titulo_pagina_configuracoes">ENCERRAR CONTA</h1>
 

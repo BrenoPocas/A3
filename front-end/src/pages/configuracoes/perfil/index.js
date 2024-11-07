@@ -7,7 +7,7 @@ function Perfil() {
 
     return <div>
     <Header/>
-    <section className="perfil">
+    <section className="seccao">
 
         <div className="a">
 
