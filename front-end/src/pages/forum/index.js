@@ -2,7 +2,7 @@ import './style.css'
 import Header from '../../components/header'
 import Footer from '../../components/footer'
 
-import IMAGE from './img/em_contrucao.png'
+import IMAGE from '../../img/em_construcao.png'
 
 function Forum() {
 

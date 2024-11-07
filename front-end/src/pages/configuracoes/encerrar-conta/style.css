@@ -27,11 +27,25 @@
 }
 
 .botao_encerrar_conta {
-    border-radius: 30%;
-    background-color: #d6711a;;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #d6711a;
-    margin-top: 20px;
-}
+        border: none;
+        border-radius: 999px;
+        display: block;
+        height: 50px;
+        width: 70%;
+        background-color: rgb(112, 112, 255);
+        box-shadow: 0 0 10px rgb(3, 31, 139);
+        font-size: 16px;
+        font-weight: bold;
+        margin: 20px auto 20px;
+        cursor: pointer;
+    }
+
+    .botao_encerrar_conta:hover {
+        background-color: rgb(80, 80, 255);
+        font-size: 1.1em;
+    }
+    
+    .botao_encerrar_conta:active {
+        background-color: rgb(112, 112, 255);
+        font-size: 16px;
+    }

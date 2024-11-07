@@ -7,13 +7,13 @@ function Perfil() {
 
     return <div>
     <Header/>
-    <section className="seccao">
+    <section className="perfil">
 
         <div className="a">
 
             <ItensConfiguracoes/>
 
-            <div className="b">
+            <div className="formulario_login1">
 
                 <h1 className="titulo_pagina_configuracoes">PERFIL</h1>
 
