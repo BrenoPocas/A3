@@ -26,7 +26,8 @@ function Footer() {
           <h1>Voluntariado</h1>
           <ul>
             <li className="footer_nav_item"><button className='footer_nav_link_footer' onClick={() => navigateTo('/acoes')}>Ações</button></li>
-            <li className="footer_nav_item"><button className='footer_nav_link_footer' onClick={() => navigateTo('/ongs')}>Para ONGs</button></li>
+            <li className="footer_nav_item"><button className='footer_nav_link_footer' onClick={() => navigateTo('/ongs')}>ONGs</button></li>
+            <li className="footer_nav_item"><button className='footer_nav_link_footer' onClick={() => navigateTo('/pontos-coleta')}>Pontos de Coleta</button></li>
           </ul>
         </div>
       
