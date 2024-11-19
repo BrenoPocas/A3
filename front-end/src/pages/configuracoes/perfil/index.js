@@ -13,7 +13,7 @@ function Perfil() {
 
             <ItensConfiguracoes/>
 
-            <div className="b">
+            <div className="formulario_login1">
 
                 <h1 className="titulo_pagina_configuracoes">PERFIL</h1>
 

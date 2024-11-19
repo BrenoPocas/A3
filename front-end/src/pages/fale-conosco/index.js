@@ -8,7 +8,7 @@ function FaleConosco() {
         
         <Header/>
 
-        <section>
+        <section className='fale_conosco'>
 
         <form className="formulario_criar_conta" action="#">
 
@@ -21,8 +21,9 @@ function FaleConosco() {
             <label for="assunto">Assunto:</label>
             <input type="text" id="assunto" required/>
 
+       
             <label for="mensagem">Sua mensagem:</label>
-            <textarea type="text" id="mensagem" required></textarea>                
+            <textarea type="text" id="mensagem" required></textarea>    
 
             <button className="botao_enviar_contato" type="button">Enviar Mensagem</button>
 

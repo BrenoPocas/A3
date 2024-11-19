@@ -80,7 +80,7 @@ header {
     color: #ffa14f;
 }
 
-button {
+header button {
     display: flex;
     flex-direction: column;
     background-color: transparent;
@@ -90,7 +90,7 @@ button {
     font-size: 15px;
 }
 
-button:hover{
+header button:hover{
     color: #f7f7f7;
     cursor: pointer;
 }
@@ -123,14 +123,26 @@ button:hover{
 .login_button button {
     border: none;
     padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #d6711a;
+    border-radius: 8px;
+    background-color: rgb(112, 112, 255);
+    box-shadow: 0 0 10px rgb(3, 31, 139);
     margin-right: 10px;
 }
 
+.login_button button:hover {
+    background-color: rgb(80, 80, 255);
+    text-decoration: none;
+}
+
+.login_button button:active {
+    background-color: rgb(112, 112, 255);
+    text-decoration: none;
+}
+
+
 .login_button button a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-weight: 500;
     font-size: 1rem;
 }
@@ -138,8 +150,9 @@ button:hover{
 .configuracoes_button button {
     border: none;
     padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #582900;
+    border-radius: 8px;
+    background-color: rgb(80, 80, 214);
+    box-shadow: 0 0 10px rgb(3, 31, 139);
 }
 
 .configuracoes_button button a {
@@ -147,6 +160,16 @@ button:hover{
     color: #fff;
     font-weight: 500;
     font-size: 1rem;
+}
+
+.configuracoes_button button:hover {
+    background-color: rgb(80, 80, 255);
+    text-decoration: none;
+}
+
+.configuracoes_button:active {
+    background-color: rgb(99, 99, 227);
+    text-decoration: none;
 }
 
 .mobile_menu_icon {

@@ -2,6 +2,7 @@ import './style.css'
 import Header from '../../../components/header'
 import Footer from '../../../components/footer'
 import ItensConfiguracoes from '../../../components/itens-configuracoes';
+import IMAGE from '../../../img/em_construcao.png'
 
 function Newsletter() {
 
@@ -16,8 +17,11 @@ function Newsletter() {
                 <div className="b">
 
                     <h1 className="titulo_pagina_configuracoes">NEWSLETTER</h1>
-
-                    <h2>Conteudo aqui</h2>
+                    <div className="buildingdiv">
+                        <div className="img">
+                        <img src={IMAGE} alt="Em construção" />
+                        </div>
+                    </div>
                     
                 </div>
 
