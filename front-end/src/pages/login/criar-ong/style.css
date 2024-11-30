@@ -93,16 +93,5 @@
 }
 
 
-.formulario_criar_conta .botao_link {
-    background-color: transparent;
-    border: none;
-    margin-bottom: 5px;
-}
-
-.formulario_criar_conta .botao_link:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
 
 

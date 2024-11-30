@@ -25,6 +25,7 @@ import EsqueceuSenha from './pages/login/esqueceu-senha';
 import VerificarConta from './pages/login/verificar-conta';
 import ContaVerificada from './pages/login/conta-verificada';
 import CriarConta from './pages/login/criar-conta';
+import CriarOng from './pages/login/criar-ong';
 
 import {
   createBrowserRouter,
@@ -111,6 +112,10 @@ const router = createBrowserRouter([
   {
     path: "/login/criar-conta",
     element: <CriarConta/>
+  },
+  {
+    path: "/login/criar-ong",
+    element: <CriarOng/>
   },
 ]);
 
