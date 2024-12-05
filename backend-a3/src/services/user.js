@@ -14,8 +14,8 @@ class ServiceUser {
         return user.findByPk(id)
     }
 
-    async create(email, password) {
-        if (!email || !password) {
+    async create(email, password, role) {
+        if (!email || !password || !role) {
             throw new Error("Email e password sao obrigatorios.")
         }
 
@@ -23,7 +23,8 @@ class ServiceUser {
 
         await user.create({
             email,
-            password: hashPassword
+            password: hashPassword,
+            role
         })
     }
 
@@ -57,7 +58,7 @@ class ServiceUser {
         const verify = await bcrypt.compare(password, currentUser.password)
 
         if (verify) {
-            return jwt.sign({ id: currentUser.id }, secretKey, { expiresIn: 60 * 60 })
+            return jwt.sign({ id: currentUser.id, role: currentUser.role }, secretKey, { expiresIn: 60 * 60 })
         }
 
         throw new Error("Email ou senha inválidos.")

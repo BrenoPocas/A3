@@ -1,6 +1,7 @@
 const express = require('express')
 const database = require('./src/database')
 const routerUser = require('./src/routes/user')
+const routerAction = require('./src/routes/action')
 const controllerUser = require('./src/controllers/user')
 const controllerVoluntary = require('./src/controllers/voluntary')
 const controllerOng = require('./src/controllers/ong')
@@ -16,6 +17,7 @@ app.post('/ong/register', controllerOng.Create)
 
 app.use(auth)
 app.use('/user', routerUser)
+app.use('/action', routerAction)
 
 database.db
     .sync({ force: false })

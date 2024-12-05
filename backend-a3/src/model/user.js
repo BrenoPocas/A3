@@ -19,6 +19,10 @@ class ModelUser {
             password: {
                 type: database.db.Sequelize.STRING,
                 allowNull: false
+            },
+            role: {
+                type: database.db.Sequelize.STRING,
+                allowNull: false
             }
         })
 

@@ -9,7 +9,7 @@ class ServiceVoluntary {
         }
 
         try {
-            await serviceUser.create(email, password)
+            await serviceUser.create(email, password, "voluntary")
             const registeredUser = await user.findOne({ where: { email } })
             const userId = registeredUser.id
 
